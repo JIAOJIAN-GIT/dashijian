@@ -8,4 +8,14 @@ var base = {
             aa(res);
         })
     },
+    tui: function(aa) {
+        $.post(url + "admin/logout", function(res) {
+            aa(res);
+        })
+    },
+    yonghu: function(aa) {
+        $.get(url + "admin/getuser", function(res) {
+            aa(res);
+        })
+    }
 }
