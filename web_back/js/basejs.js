@@ -1,7 +1,6 @@
-var url = "http://localhost:8000/";
 var base = {
     login: function(myname, password1, aa) {
-        $.post(url + "admin/login", {
+        $.post(jidi.login, {
             user_name: myname,
             password: password1,
         }, function(res) {
@@ -9,12 +8,12 @@ var base = {
         })
     },
     tui: function(aa) {
-        $.post(url + "admin/logout", function(res) {
+        $.post(jidi.tui, function(res) {
             aa(res);
         })
     },
     yonghu: function(aa) {
-        $.get(url + "admin/getuser", function(res) {
+        $.get(jidi.yonghu, function(res) {
             aa(res);
         })
     }
