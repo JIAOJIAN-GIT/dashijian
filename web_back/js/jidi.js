@@ -17,5 +17,6 @@ var jidi = {
     // 编辑类别
     bainjileibei: url + "admin/category_edit",
     // 新增文章
-    xinzengwenzhang: url + "admin/category_add"
+    xinzengwenzhang: url + "admin/category_add",
+
 }

@@ -45,7 +45,9 @@ var base = {
             aa(res)
         })
     },
-    xinzengwenzhang: function() {
-        $.post()
+    xinzengwenzhang: function(name, slug, aa) {
+        $.post(jidi.xinzengwenzhang, { name: name, slug: slug }, function(res) {
+            aa(res)
+        })
     }
 }
